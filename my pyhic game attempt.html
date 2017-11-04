@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Psychic Game</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Psychic Game">
+    <meta name="author" content="Syed">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- set up style sheets -->
+	<!-- reset not needed because using bootstrap -->
+	<!-- <link rel="stylesheet" type="text/css" href="/assets/css/reset.css"> -->
+	<!-- Link in locally stored min version of bootstrap.css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<!-- Make final css adjustments with personal stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+	<!-- This is what will be displayed on screen to begin -->
+	<div class="jumbotron">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-6">
+					<img src="assets/images/psychic.jpg" class="img-responsive" alt="psychic">
+				</div>
+				<div class="col-md-5"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-6" id="game">
+					<p><h1>The Psychic Game</h1></p>
+					<p><h4>Guess what letter I'm thinking of</h4></p>
+					<p><h4>Wins: <label id="win"></label></h4></p>
+					<p><h4>Losses:<label id="loss"></label></h4></p>
+					<p><h4>Guesses Left:<label id="guess"></label></h4></p>
+					<p><h4>Your guesses so far:<label id="guessedLetter"></label></h4></p>
+
+
+				</div>
+				<div class="col-md-5"></div>
+			</div>
+	</div>
+	
+	<!-- Link to javascript game.js -->
+	    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+</body>
+
+</html>
